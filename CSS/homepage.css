@@ -28,7 +28,7 @@ body {
 
 .homePageLayout .homeHeroSection {
     height: 60vh;
-    background-image: linear-gradient(var(--bs-home-hero-bg-secondary), var(--bs-home-hero-bg-primary));
+    background-image: linear-gradient(to bottom, var(--bs-home-hero-bg-tertary), var(--bs-home-hero-bg-primary));
 }
 
 .homePageLayout .homeHeroSection .heroContent {
@@ -49,6 +49,7 @@ body {
     font-weight: 700;
     text-align: center;
     text-transform: capitalize;
+    color: var(--bs-home-hero-title-gray);
 }
 
 .homePageLayout .homeHeroSection .heroContent .heroText .heroTextDescription {
@@ -56,6 +57,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     max-width: 55%;
+    font-family: var(--bs-montserrat-font-family);
     margin: 20px auto;
     justify-content: center;
     align-items: center;
@@ -64,18 +66,18 @@ body {
 
 .homePageLayout .homeHeroSection .heroContent .heroButtonsArea {
     width: 70%;
-    gap: 40px;
+    gap: 50px;
     margin-top: 16px;
     display: flex;
     justify-content: start;
 }
 
 .homePageLayout .homeHeroSection .heroContent .heroButtonsArea .heroButton {
-    padding: 20px 50px;
-    font-size: 22px;
-    font-weight: 400;
+    padding: 20px 60px;
+    font-size: 18px;
+    font-weight: 600;
     text-transform: uppercase;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .heroButton:hover {
@@ -92,7 +94,7 @@ body {
 .homePageLayout .homeHeroSection .heroContent .heroButtonsArea .heroButton2 {
     background-color: var(--bs-btn-bg-gradient-primary-color);
     border: 1px solid var(--bs-btn-bg-gradient-primary-color);
-    padding: 20px 30px;
+    padding: 22px 38px;
 }
 
 .homePageLayout .homeHeroSection .heroContent .heroButtonsArea .heroButton2 .btnIcon {
@@ -113,13 +115,13 @@ body {
     height: 250px;
     width: 130px;
     bottom: 10%;
+    z-index: 1;
 }
 
 /* Analytics Section Starts Here */
 .homePageLayout .analyticsSection {
     margin-top: 14%;
     background-color: var(--bs-bg-body-color);
-    position: relative;
 }
 
 .homePageLayout .analyticsContent .analyticsImageArea {
@@ -148,7 +150,7 @@ body {
 }
 
 .homePageLayout .analyticsSection .analyticsContent .analyticsContentDescription {
-    width: 76%;
+    width: 69%;
     font-size: 18px;
     font-weight: 300;
     text-align: left;
@@ -172,7 +174,7 @@ body {
 .homePageLayout .dividerRule {
     margin: 90px auto;
     height: 1px;
-    width: 90vw;
+    width: fill;
 }
 
 /* Gird Section */
@@ -194,7 +196,7 @@ body {
     font-size: 18px;
     font-weight: 500;
     color: var(--bs-lightgray-text-color);
-    width: 80%;
+    width: 75%;
     text-align: left;
     text-transform: capitalize;
 }
@@ -1095,7 +1097,7 @@ body {
 
     /* Hero Section */
     .homePageLayout .homeHeroSection {
-        height: 50vh;
+        height: 60vh;
         margin-top: auto;
     }
 
@@ -1106,13 +1108,14 @@ body {
 
     /* Bottom Image */
     .ovalBaseImage {
-        bottom: 16% !important;
+        bottom: -20% !important;
+        z-index: 1;
     }
 
     /* Analytics Section */
 
     .homePageLayout .analyticsSection {
-        margin-top: 24%;
+        margin-top: 30%;
     }
 
     .homePageLayout .analyticsSection .analyticsContent {
@@ -1277,7 +1280,7 @@ body {
 
     /* Bottom Image */
     .ovalBaseImage {
-        bottom: 58% !important;
+        bottom: 48% !important;
     }
 
     /* Floating image circle */
