@@ -1,0 +1,1364 @@
+@import url(../CSS/style.css);
+@import url(../CSS/header.css);
+@import url(../css/footer.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--bs-inter-font-family);
+    background-color: var(--bs-bg-body-color);
+}
+
+.textPrimary {
+    color: var(--bs-text-primary-color);
+}
+
+.textActive {
+    color: var(--bs-text-active-color);
+}
+
+.footerSection {
+    position: relative;
+}
+
+/* Hero Section Layout */
+.homePageLayout {
+    background-color: var(--bs-bg-body-color);
+}
+
+.homePageLayout .homeHeroSection {
+    height: 60vh;
+    background-image: linear-gradient(var(--bs-home-hero-bg-secondary), var(--bs-home-hero-bg-primary));
+}
+
+.homePageLayout .homeHeroSection .heroContent {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homePageLayout .homeHeroSection .heroContent .heroText {
+    margin-top: 115px;
+    width: 70%;
+    align-items: center;
+}
+
+.homePageLayout .homeHeroSection .heroContent .heroText .heroTextHeading {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.homePageLayout .homeHeroSection .heroContent .heroText .heroTextDescription {
+    color: var(--bs-gray-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 55%;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.homePageLayout .homeHeroSection .heroContent .heroButtonsArea {
+    width: 70%;
+    gap: 40px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: start;
+}
+
+.homePageLayout .homeHeroSection .heroContent .heroButtonsArea .heroButton {
+    padding: 20px 50px;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+.heroButton:hover {
+    cursor: pointer;
+    transform: scale(.9);
+    transition-duration: .7s;
+}
+
+.homePageLayout .homeHeroSection .heroContent .heroButtonsArea .heroButton1 {
+    background-color: var(--bs-dark-blue-bg-color);
+    border: 1px solid var(--bs-dark-blue-bg-color);
+}
+
+.homePageLayout .homeHeroSection .heroContent .heroButtonsArea .heroButton2 {
+    background-color: var(--bs-btn-bg-gradient-primary-color);
+    border: 1px solid var(--bs-btn-bg-gradient-primary-color);
+    padding: 20px 30px;
+}
+
+.homePageLayout .homeHeroSection .heroContent .heroButtonsArea .heroButton2 .btnIcon {
+    height: 22px;
+    width: 30px;
+}
+
+/* Floating image circle */
+.homePageLayout .homeHeroSection .circleBaseImage {
+    height: auto;
+    width: 250px;
+    top: 18% !important;
+    left: 2% !important;
+}
+
+/* Floating image semi-circle */
+.ovalBaseImage {
+    height: 250px;
+    width: 130px;
+    bottom: 10%;
+}
+
+/* Analytics Section Starts Here */
+.homePageLayout .analyticsSection {
+    margin-top: 14%;
+    background-color: var(--bs-bg-body-color);
+    position: relative;
+}
+
+.homePageLayout .analyticsContent .analyticsImageArea {
+    width: 60vw;
+    height: 40vh;
+}
+
+.homePageLayout .analyticsContent .analyticsImageArea .analyticsImage{
+    width: 100%;
+    height: 100%;
+}
+
+.homePageLayout .analyticsSection .analyticsContent {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 34px;
+}
+
+.homePageLayout .analyticsSection .analyticsContent .analyticsContentHeading {
+    font-size: 48px;
+    font-weight: 500;
+    width: 90%;
+}
+
+.homePageLayout .analyticsSection .analyticsContent .analyticsContentDescription {
+    width: 76%;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.homePageLayout .analyticsSection .analyticsContent .analyticsContentButton {
+    color: var(--bs-text-primary-color);
+    font-size: 20px;
+    padding: 20px 60px;
+    background-image: linear-gradient(to right, var(--bs-btn-bg-gradient-primary-color), var(--bs-btn-bg-gradiant-secondary-color));
+    border: 1px solid var(--bs-btn-bg-gradient-primary-color);
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.homePageLayout .analyticsSection .analyticsContent .analyticsContentButton:hover {
+    cursor: pointer;
+}
+
+/* Divider Rule */
+.homePageLayout .dividerRule {
+    margin: 90px auto;
+    height: 1px;
+    width: 90vw;
+}
+
+/* Gird Section */
+.homePageLayout .gridSection {
+    margin: 40px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.homePageLayout .gridSection .gridText .gridTextHeading {
+    font-size: 48px;
+    color: var(--bs-text-primary-color);
+    width: 85%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.homePageLayout .gridSection .gridText .gridTextDescription {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--bs-lightgray-text-color);
+    width: 80%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+/* gridTextArea */
+.homePageLayout .gridSection .gridCardArea {
+    margin-top: auto;
+}
+
+.homePageLayout .gridSection .gridCardArea .gridCard {
+    background-color: var(--bs-card-bg-blue-color) !important;
+    color: var(--bs-card-text-gray-color);
+    border-radius: 12px;
+    width: 284px;
+    height: 260px;
+}
+
+.homePageLayout .gridSection .gridCardArea .gridCard .gridCardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.homePageLayout .gridSection .gridCardArea .gridCard .gridCardContent .gridCardImage {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.homePageLayout .gridSection .gridCardArea .gridCard .gridCardContent .gridCardText {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+/* Info Section Starts here */
+.homePageLayout .infoSection {
+    margin: 100px auto;
+}
+
+.homePageLayout .infoSection .infoContentHeading {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--bs-text-primary-color);
+}
+
+.homePageLayout .infoSection .infoContentDescription {
+    font-size: 24px;
+    font-weight: 400;
+    width: 85%;
+    color: var(--bs-gray-color);
+}
+
+.homePageLayout .infoSection .barImage {
+    right: 10%;
+}
+
+/* Floating Info Section Iamages */
+.homePageLayout .infoSection .floatimageLeft {
+    height: auto;
+    margin-top: 160px;
+    padding: 0;
+    left: 0;
+    width: 130px;
+}
+
+.homePageLayout .infoSection .floatimageRight {
+    height: auto;
+    margin-top: 70px;
+    padding: 0;
+    right: 0;
+    width: 150px;
+}
+
+.homePageLayout .liveProductSection {
+    margin: 150px auto;
+}
+
+.homePageLayout .liveProductSection .liveHeading {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--bs-text-primary-color);
+}
+
+.homePageLayout .liveProductSection .liveHeading .liveHeadingDot {
+    position: absolute;
+}
+
+.homePageLayout .liveProductSection .chartsButton {
+    margin-right: 12px;
+    padding: 30px 50px;
+    background-image: linear-gradient(to right, var(--bs-btn-bg-gradient-primary-color), var(--bs-btn-bg-gradient-tertery-color));
+    color: var(--bs-text-primary-color);
+    border: 1px solid var(--bs-btn-bg-gradient-primary-color);
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.homePageLayout .liveProductSection .chartsButton .chartsButtonImg {
+    margin-left: 8px;
+}
+
+.homePageLayout .productLineImg {
+    position: absolute;
+    left: 0;
+}
+
+/* Carousel Section */
+.homePageLayout .carouselSection {
+    margin: 120px auto;
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 360px;
+    height: 380px;
+}
+
+.homePageLayout .carouselSection .carouselHeading {
+    color: var(--bs-text-primary-color);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.homePageLayout .carouselSection .carouselDescription {
+    color: var(--bs-text-primary-color);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 14px;
+}
+
+.homePageLayout .carouselSection .carouselControlIconPrevious {
+    border: 1px solid wheat;
+    border-radius: 30px;
+    height: 45px;
+    width: 45px;
+    background-color: var(--bs-bg-body-color);
+    position: absolute;
+    left: 25%;
+    bottom: 10%;
+}
+
+.homePageLayout .carouselSection .carouselControlIconNext {
+    border: 1px solid wheat;
+    border-radius: 30px;
+    height: 45px;
+    width: 45px;
+    background-color: var(--bs-btn-bg-gradient-primary-color);
+    position: absolute;
+    left: 35%;
+    bottom: 10%;
+}
+
+.homePageLayout .carouselSection .carouselCounter {
+    position: absolute;
+    left: 65%;
+    bottom: 10%;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:400px) {
+
+    /* HeroSection */
+    .homePageLayout {
+        overflow: hidden;
+    }
+
+    .homePageLayout .homeHeroSection {
+        height: 50vh;
+        margin-top: 60px;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroText .heroTextHeading {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroText .heroTextDescription {
+        font-size: 11px;
+        width: 70%;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroButtonsArea {
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        margin: 12px;
+        padding: 8px 35px;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroButtonsArea .heroButton {
+        padding: 8px 50px;
+        font-size: 14px;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroButtonsArea .heroButton2 {
+        padding: 8px 40px;
+    }
+
+    .homePageLayout .homeHeroSection .circleBaseImage {
+        width: 120px;
+        top: 15%;
+    }
+
+    .ovalBaseImage {
+        width: 60px;
+        height: 120px;
+        bottom: 34%;
+    }
+
+
+    /* Analytics Section */
+
+    .homePageLayout .analyticsSection {
+        margin-top: 70px;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent {
+        margin-top: 35px;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentHeading {
+        font-size: 18px;
+        text-align: left;
+        width: auto;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentDescription {
+        width: auto;
+        text-align: left;
+        font-size: 14px;
+
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentButton {
+        font-size: 14px;
+        padding: 8px 25px;
+    }
+
+    /* Divider Rule */
+    .homePageLayout .dividerRule {
+        margin: 32px auto;
+    }
+
+    /* Grid Section */
+
+    /* gridText Area */
+
+    .homePageLayout .gridSection .gridText .gridTextHeading {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .homePageLayout .gridSection .gridText .gridTextDescription {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    /* Grid Card Area */
+    .homePageLayout .gridSection .gridCardArea {
+        margin: auto;
+    }
+
+    .homePageLayout .gridSection .gridCardArea .gridCard {
+        width: 80vw;
+    }
+
+    /* info Section  */
+
+    .homePageLayout .infoSection {
+        margin: 25px auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homePageLayout .infoSection .infoContentHeading {
+        font-size: 18px;
+        width: auto;
+    }
+
+    .homePageLayout .infoSection .infoContentDescription {
+        font-size: 12px;
+        width: 90vw;
+    }
+
+    .homePageLayout .infoSection .barImage {
+        width: 80vw;
+    }
+
+    .homePageLayout .infoSection .floatimageLeft {
+        margin-top: 40px;
+        width: 45px;
+    }
+
+    .homePageLayout .infoSection .floatimageRight {
+        margin-top: 40px;
+        width: 50px;
+    }
+
+    /* Live Product Section */
+    .homePageLayout .liveProductSection {
+        margin: 60px auto;
+    }
+
+    .homePageLayout .liveProductSection .liveHeading {
+        font-size: 24px;
+        margin: 14px auto;
+    }
+
+    .homePageLayout .liveProductSection .liveHeading .liveHeadingDot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .homePageLayout .liveProductSection .chartsButton {
+        padding: 12px 40px;
+        font-size: 14px;
+    }
+
+    .homePageLayout .liveProductSection .chartsButton .chartsButtonImg {
+        height: 14px;
+        width: 12px;
+    }
+
+    .homePageLayout .liveProductSection .productLineImg {
+        display: none;
+    }
+
+    /* Carousel Section */
+    .homePageLayout .carouselSection {
+        margin-top: 15px;
+    }
+
+    .carousel-inner {
+        display: block;
+        height: 305px;
+    }
+
+    .homePageLayout .carouselSection .carouselControlIconPrevious {
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+        left: 2%;
+    }
+
+    .homePageLayout .carouselSection .carouselControlIconNext {
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+        left: 20%;
+    }
+
+    .homePageLayout .carouselSection .carouselSectionImg {
+        width: 90vw;
+        display: flex;
+        margin: 20px auto;
+    }
+
+}
+
+@media screen and (min-width:401px) and (max-width:576px) {
+    .homePageLayout .homeHeroSection {
+        height: 55vh;
+        margin-top: 70px;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroText .heroTextHeading {
+        font-size: 22px;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroText .heroTextDescription {
+        font-size: 14px;
+        width: 70%;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroButtonsArea {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        margin: 15px;
+    }
+
+    .heroButton {
+        font-size: 14px;
+    }
+
+    .homePageLayout .homeHeroSection .circleBaseImage {
+        width: 160px;
+        top: 14% !important;
+    }
+
+    .ovalBaseImage {
+        width: 70px;
+        height: 140px;
+        bottom: 38%;
+    }
+
+    /* Analytics Section */
+
+    .homePageLayout .analyticsSection .analyticsContent {
+        margin-top: 35px;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentHeading {
+        font-size: 20px;
+        text-align: left;
+        width: auto;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentDescription {
+        width: auto;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentButton {
+        font-size: 14px;
+        padding: 8px 25px;
+    }
+
+    /* Divider Ri=ule */
+    .homePageLayout .dividerRule {
+        margin: 32px auto;
+    }
+
+    /* Grid Section */
+    .homePageLayout .gridSection .gridText .gridTextHeading {
+        font-size: 20px;
+        width: auto;
+    }
+
+    .homePageLayout .gridSection .gridText .gridTextDescription {
+        font-size: 16px;
+        width: auto;
+    }
+
+    /* Grid Card Area */
+    .homePageLayout .gridSection .gridCardArea {
+        margin: auto;
+    }
+
+    .homePageLayout .gridSection .gridCardArea .gridCard {
+        width: auto;
+    }
+
+
+    /* info Section  */
+    .homePageLayout .infoSection {
+        overflow: hidden;
+        margin: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homePageLayout .infoSection .infoContentHeading {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    .homePageLayout .infoSection .infoContentDescription {
+        font-size: 16px;
+        width: auto;
+        text-align: left;
+    }
+
+    .homePageLayout .infoSection .barImage {
+        width: 70vw;
+    }
+
+    .homePageLayout .infoSection .floatimageLeft {
+        margin-top: 85px;
+        width: 60px;
+    }
+
+    .homePageLayout .infoSection .floatimageRight {
+        margin-top: 135px;
+        width: 70px;
+        z-index: 9999;
+    }
+
+    /* Live Product Section */
+    .homePageLayout .liveProductSection {
+        margin: 70px auto;
+    }
+
+    .homePageLayout .liveProductSection .liveHeading {
+        font-size: 24px;
+        margin: 14px auto;
+    }
+
+    .homePageLayout .liveProductSection .liveHeading .liveHeadingDot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .homePageLayout .liveProductSection .chartsButton {
+        padding: 12px 40px;
+        font-size: 14px;
+    }
+
+    .homePageLayout .liveProductSection .chartsButton .chartsButtonImg {
+        height: 14px;
+        width: 12px;
+    }
+
+    .homePageLayout .liveProductSection .productLineImg {
+        display: none;
+    }
+
+
+    /* Carousel Section */
+    .homePageLayout .carouselSection {
+        margin-top: 15px;
+    }
+
+    .carousel-inner {
+        display: block;
+        height: 305px;
+    }
+
+    .homePageLayout .carouselSection .carouselControlIconPrevious {
+        border-radius: 45px;
+        height: 45px;
+        width: 45px;
+        left: 2%;
+    }
+
+    .homePageLayout .carouselSection .carouselControlIconNext {
+        border-radius: 45px;
+        height: 45px;
+        width: 45px;
+        left: 20%;
+    }
+
+    .homePageLayout .carouselSection .carouselSectionImg {
+        width: 90vw;
+        display: flex;
+        margin: 20px auto;
+    }
+
+}
+
+
+@media screen and (min-width:577px) and (max-width:768px) {
+
+    /* Hero Section */
+    .homePageLayout .homeHeroSection {
+        height: 40vh;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroText .heroTextHeading {
+        font-size: 36px;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroText .heroTextDescription {
+        font-size: 16px;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroButtonsArea .heroButton {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    /* Floating image circle */
+    .homePageLayout .homeHeroSection .circleBaseImage {
+        height: auto;
+        width: 250px;
+        top: 14% !important;
+        left: 2% !important;
+    }
+
+    /* Floating image semi-circle */
+    .ovalBaseImage {
+        height: 250px;
+        width: 130px;
+        bottom: 8%;
+    }
+
+    /* Analytics Section */
+
+    .homePageLayout .analyticsSection .analyticsContent {
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        gap: 18px;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentHeading {
+        font-size: 36px;
+        text-align: left;
+        width: auto;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentDescription {
+        width: 75vw;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentButton {
+        font-size: 14px;
+        padding: 12px 35px;
+    }
+
+    /* Divider Rule */
+    .homePageLayout .dividerRule {
+        margin: 36px auto;
+    }
+
+    /* Grid Section */
+
+    /* GridText Area */
+    .homePageLayout .gridSection .gridText .gridTextHeading {
+        font-size: 26px;
+        width: 100%;
+    }
+
+    .homePageLayout .gridSection .gridText .gridTextDescription {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .homePageLayout .gridSection .gridCardArea {
+        margin: auto;
+    }
+
+    .homePageLayout .gridSection .gridCardArea .gridCard {
+        width: 300px;
+    }
+
+    /* info Section  */
+    .homePageLayout .infoSection {
+        overflow: hidden;
+    }
+
+    .homePageLayout .infoSection .infoContentHeading {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    .homePageLayout .infoSection .infoContentDescription {
+        font-size: 16px;
+        width: 90vw;
+        text-align: left;
+    }
+
+    .homePageLayout .infoSection .barImage {
+        width: 60vw;
+        align-items: center;
+    }
+
+    .homePageLayout .infoSection .floatimageLeft {
+        margin-top: 40px;
+        width: 65px;
+    }
+
+    .homePageLayout .infoSection .floatimageRight {
+        margin-top: 50px;
+        width: 75px;
+    }
+
+    /* Live Product Section */
+
+    .homePageLayout .liveProductSection {
+        margin: 60px auto;
+    }
+
+    .homePageLayout .liveProductSection .liveHeading {
+        font-size: 36px;
+
+    }
+
+    .homePageLayout .liveProductSection .chartsButton {
+        padding: 18px 40px;
+        font-size: 14px;
+    }
+
+    .homePageLayout .liveProductSection .chartsButton .chartsButtonImg {
+        height: 18px;
+        width: 12px;
+    }
+
+    .homePageLayout .liveProductSection .productLineImg {
+        width: 36vw;
+    }
+
+    /* Carousel Section */
+
+    .homePageLayout .carouselSection {
+        margin-top: 30px;
+    }
+
+    .carousel-inner {
+        display: block;
+        height: 30vh;
+        width: 80vw;
+    }
+
+    .homePageLayout .carouselSection .carouselHeading {
+        font-size: 40px;
+    }
+
+    .homePageLayout .carouselSection .carouselDescription {
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .homePageLayout .carouselSection .carouselControlIconPrevious {
+        left: 8%;
+    }
+
+    .homePageLayout .carouselSection .carouselControlIconNext {
+        left: 20%;
+    }
+
+    .homePageLayout .carouselSection .carouselSectionImg {
+        width: 90vw;
+        display: flex;
+        margin: 35px auto;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+
+    /* Homepage Section */
+    .homePageLayout .homeHeroSection {
+        height: 40vh;
+    }
+
+    /* Floating image circle */
+    .homePageLayout .homeHeroSection .circleBaseImage {
+        top: 9% !important;
+    }
+
+    /* Floating image semi-circle */
+    .ovalBaseImage {
+        bottom: 52%;
+    }
+
+    /* Analytics Section */
+    .homePageLayout .analyticsContent .analyticsImageArea {
+        width: 80vw !important;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent {
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentHeading {
+        font-size: 44px;
+        text-align: left;
+        width: auto;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentDescription {
+        font-size: 20px;
+        text-align: left;
+        width: 85vw;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentButton {
+        font-size: 20px;
+        padding: 15px 60px;
+    }
+
+    .homePageLayout .dividerRule {
+        margin: 36px auto;
+    }
+
+    /* Grid Section */
+
+    /* Grid Text Arean */
+    .homePageLayout .gridSection .gridText .gridTextHeading {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .homePageLayout .gridSection .gridText .gridTextDescription {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    /* Grid Card Area */
+    .homePageLayout .gridSection .gridCardArea {
+        margin: auto;
+    }
+
+    .homePageLayout .gridSection .gridCardArea .gridCard {
+        width: auto;
+    }
+
+    /* Info Section */
+    .homePageLayout .infoSection {
+        overflow: hidden;
+    }
+
+    .homePageLayout .infoSection .infoContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 15px;
+    }
+
+    .homePageLayout .infoSection .infoContentHeading {
+        font-size: 40px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .homePageLayout .infoSection .infoContentDescription {
+        font-size: 18px;
+        width: 75vw;
+        text-align: left;
+    }
+
+    .homePageLayout .infoSection .barImage {
+        width: 50vw;
+
+    }
+
+    .homePageLayout .infoSection .floatimageLeft {
+        margin-top: 75px;
+        width: 80px;
+    }
+
+    .homePageLayout .infoSection .floatimageRight {
+        margin-top: 90px;
+        width: 100px;
+    }
+
+    /* Live Product Section */
+
+    .homePageLayout .liveProductSection .liveHeading {
+        font-size: 40px;
+    }
+
+    .homePageLayout .liveProductSection .productLineImg {
+        width: 40vw;
+    }
+
+    /* Carousel Section */
+    .homePageLayout .carouselSection {
+        margin-top: 30px;
+    }
+
+    .carousel-inner {
+        display: block;
+        height: 30vh;
+        width: 80vw;
+    }
+
+    .homePageLayout .carouselSection .carouselHeading {
+        font-size: 34px;
+    }
+
+    .homePageLayout .carouselSection .carouselDescription {
+        font-size: 26px;
+    }
+
+    .homePageLayout .carouselSection .carouselControlIconPrevious {
+        left: 8%;
+    }
+
+    .homePageLayout .carouselSection .carouselControlIconNext {
+        left: 20%;
+    }
+
+    .homePageLayout .carouselSection .carouselSectionImg {
+        width: 90vw;
+        display: flex;
+        margin: 35px auto;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+
+    /* Hero Section */
+    .homePageLayout .homeHeroSection {
+        height: 50vh;
+        margin-top: auto;
+    }
+
+    /* Floating image circle */
+    .homePageLayout .homeHeroSection .circleBaseImage {
+        top: 120px !important;
+    }
+
+    /* Bottom Image */
+    .ovalBaseImage {
+        bottom: 16% !important;
+    }
+
+    /* Analytics Section */
+
+    .homePageLayout .analyticsSection {
+        margin-top: 24%;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent {
+        gap: 25px;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentHeading {
+        font-size: 34px;
+        width: auto;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentDescription {
+        font-size: 14px;
+        width: auto;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentHeading {
+        font-size: 34px;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentDescription {
+        font-size: 14px;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentButton {
+        padding: 8px 35px;
+    }
+
+    /* Geid Section */
+
+    /* GridText Area */
+    .homePageLayout .gridSection .gridText .gridTextHeading {
+        font-size: 28px;
+    }
+
+    .homePageLayout .gridSection .gridText .gridTextDescription {
+        font-size: 14px;
+    }
+
+    .homePageLayout .gridSection .gridCardArea .gridCard {
+        width: 254px;
+        height: 234px;
+    }
+
+    /* Info Section */
+    .homePageLayout .infoSection .infoContentHeading {
+        font-size: 34px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .homePageLayout .infoSection .infoContentDescription {
+        font-size: 20px;
+        width: 90%;
+        text-align: left;
+    }
+
+    .homePageLayout .infoSection .barImage {
+        width: 40vw;
+    }
+
+    .homePageLayout .infoSection .floatimageLeft {
+        margin-top: 180px;
+        width: 80px;
+    }
+
+    .homePageLayout .infoSection .floatimageRight {
+        margin-top: 80px;
+        width: 100px;
+    }
+
+    /* Carousel Section */
+    .homePageLayout .carouselSection .carouselControlIconPrevious {
+        left: 8%;
+    }
+
+    .homePageLayout .carouselSection .carouselControlIconNext {
+        left: 22%;
+    }
+
+}
+
+
+@media screen and (min-width:1201px) and (max-width:1280px) {
+
+    /* Analytics Section */
+
+    .homePageLayout .analyticsSection .analyticsContent {
+        gap: 24px;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentHeading {
+        font-size: 40px;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentDescription {
+        font-size: 16px;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentButton {
+        padding: 8px 35px;
+    }
+
+    /* Grid Section */
+
+    /* Grid TextArea */
+    .homePageLayout .gridSection .gridText .gridTextHeading {
+        width: 100%;
+    }
+
+    .homePageLayout .gridSection .gridText .gridTextDescription {
+        font-size: 16px;
+    }
+
+    /* Info Section */
+    .homePageLayout .infoSection .infoContentHeading {
+        font-size: 34px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .homePageLayout .infoSection .infoContentDescription {
+        font-size: 20px;
+        width: 90%;
+        text-align: left;
+    }
+
+    .homePageLayout .infoSection .floatimageLeft {
+        margin-top: 100px;
+        width: 100px;
+    }
+
+    .homePageLayout .infoSection .floatimageRight {
+        margin-top: 60px;
+        width: 120px;
+    }
+
+    .homePageLayout .infoSection .barImage {
+        width: 40vw;
+    }
+
+    .homePageLayout .carouselSection .carouselControlIconPrevious {
+        left: 17%;
+    }
+
+    .homePageLayout .carouselSection .carouselControlIconNext {
+        left: 30%;
+    }
+
+    .homePageLayout .carouselSection .carouselSectionImg {
+        width: 52vw;
+    }
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1024px) and (min-height:1366px) {
+
+    /* Hero Section */
+    .homePageLayout .homeHeroSection {
+        height: auto;
+    }
+
+    /* Bottom Image */
+    .ovalBaseImage {
+        bottom: 58% !important;
+    }
+
+    /* Floating image circle */
+    .homePageLayout .homeHeroSection .circleBaseImage {
+        top: 120px !important;
+    }
+
+    /* Analytics Section */
+
+
+    .homePageLayout .analyticsSection {
+        margin-top: 24%;
+    }
+
+    .homePageLayout .analyticsContent .analyticsImageArea {
+        width: 50vw;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent {
+        gap: 25px;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentHeading {
+        font-size: 34px;
+        width: auto;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentDescription {
+        font-size: 14px;
+        width: auto;
+    }
+
+    .homePageLayout .analyticsSection .analyticsContent .analyticsContentButton {
+        padding: 8px 35px;
+    }
+
+
+    /* Grid Section */
+
+    /* GridText Area */
+    .homePageLayout .gridSection .gridText .gridTextHeading {
+        font-size: 28px;
+    }
+
+    .homePageLayout .gridSection .gridText .gridTextDescription {
+        font-size: 14px;
+    }
+
+
+
+    /* Info Section */
+    .homePageLayout .infoSection .infoContentHeading {
+        font-size: 34px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .homePageLayout .infoSection .infoContentDescription {
+        font-size: 20px;
+        width: 90%;
+        text-align: left;
+    }
+
+    .homePageLayout .infoSection .floatimageLeft {
+        margin-top: 110px;
+        width: 100px;
+    }
+
+    .homePageLayout .infoSection .floatimageRight {
+        margin-top: 85px;
+        width: 115px;
+    }
+
+    /* Carousel Section */
+    .homePageLayout .carouselSection {
+        margin-top: 30px;
+    }
+
+    .homePageLayout .carouselSection .carouselSectionImg {
+        width: 53vw;
+        height: 27vh;
+    }
+
+}
