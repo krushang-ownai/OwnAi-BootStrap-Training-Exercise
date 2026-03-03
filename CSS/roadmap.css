@@ -8,6 +8,9 @@ body{
     font-family: var(--bs-inter-font-family);
     background-color: var(--bs-bg-body-color);
 }
+.footerSection{
+    position: relative;
+}
 
 .textPrimary{
     color: var(--bs-text-primary-color);
@@ -135,9 +138,6 @@ body{
 }
 
 @media screen and (min-width:769px) and (max-width:992px){
-    .footerSection{
-        position: relative;
-    }
     .roadmapLayout .roadmapHeroSection{
         margin-top: 120px;
     }
@@ -156,6 +156,24 @@ body{
     }
     /* Hero Section Image */
     .roadmapLayout ,.roadmapHeroSection .roadmapHeroImage{
-        margin-top: 100px;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1200px){
+    .roadmapLayout .roadmapHeroSection .heroText .heroTextHeading{
+        font-size: 30px;
+    }
+    .roadmapLayout .roadmapHeroSection .heroText .heroTextDescription{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:1201px) and (max-width:1280px){
+        .roadmapLayout .roadmapHeroSection .heroText .heroTextHeading{
+        font-size: 40px;
+    }
+    .roadmapLayout .roadmapHeroSection .heroText .heroTextDescription{
+        width: 55%;
     }
 }
